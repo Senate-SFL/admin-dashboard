@@ -4,8 +4,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="main__cont">
+        <div class="header__cont">
+            <div class="header__stuff">
+                <!--TOP-->
+                <div class="search__symbol"><img src="images/search.png"></div>
+                <div class="search__bar">
+                    <form action="/search" method="get">
+                        <input type="search" id="search-input" name="query" placeholder="Search...">
+                    </form>
+                </div>
+                <div class="header__bell"><img src="images/bell.png"></div>
+                <div class="profile__pic"><img src="images/user.png"></div>
+                <div class="profile__name">Morgan Oakley</div>
+                <!--BOTTOM-->
+                <div class="profile__pic_big"><img src="images/user.png"></div>
+                <div class="header__greeting_cont">
+                    Heller,<br>
+                    <span class="profile__name_bottom">Morgan Oakley</span>
+                </div>
+                <div class="new__button">
+                    <form action="https://google.com">
+                        <input type="submit" id="buttons" value="New" />
+                    </form>
+                </div>
+                <div class="upload__button">
+                    <form action="https://google.com">
+                        <input type="submit" id="buttons" value="Upload" />
+                    </form>
+                </div>
+                <div class="share__button">
+                    <form action="https://google.com">
+                        <input type="submit" id="buttons" value="Share" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar__cont">
+            <div class="sidebar__menu">
+                <ul class="dash">
+                    <li>Dashboard</li>
+                </ul>
+                <ul>
+                    <li>Home</li>
+                    <li>Profile</li>
+                    <li>Messages</li>
+                    <li>History</li>
+                    <li>Tasks</li>
+                    <li>Community</li>
+                </ul>
+                <ul>
+                    <li>Settings</li>
+                    <li>Support</li>
+                    <li>Privacy</li>
+                </ul>
+            </div>
+            <div class="sidebar__images">
+                <ul class="dash">
+                    <li><img src="images/square-binary.png" height="40px"></li>
+                </ul>
+                <ul>
+                    <li><img class="home" src="images/home.png"></li>
+                    <li><img class="home" src="images/address-card.png"></li>
+                    <li><img class="home" src="images/envelope.png"></li>
+                    <li><img class="home" src="images/clock.png"></li>
+                    <li><img class="home" src="images/list.png"></li>
+                    <li><img class="home" src="images/people.png"></li>
+                </ul>
+                <ul>
+                    <li><img class="home" src="images/gear.png"></li>
+                    <li><img class="home" src="images/question.png"></li>
+                    <li><img class="home" src="images/file-shield.png"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="body__cont">
+                <div class="left__side">
+                    <div class="projects__header">
+                        Your Projects
+                    </div>
+                    <div class="projects__boxes">
+                        <div class="box" id="box1">
+                            <div class="box-top"><h3>Super Cool Project</h3>
+                            This is the filler content for the first box. There's not much going on but we're
+                            just coding stuff. Testing to see if this keeps pushing the bottom stuff. (and it does
+                            unless I add overflow auto)
+                            </div>
+                            <div class="box-bottom">
+                                <img src="images/star.png"><img src="images/eye.png"><img src="images/share.png">
+                            </div>
+                        </div>
+                        <div class="box" id="box2">
+                            <div class="box-top"><h3>Less Cool Project</h3>
+                            This is the filler content for the second box. There's not much going on but we're
+                            just coding stuff. Testing to see if this keeps pushing the bottom stuff. (and it does
+                            unless I add overflow auto)</div>
+                            <div class="box-bottom">
+                                <img src="images/star.png"><img src="images/eye.png"><img src="images/share.png">
+                            </div>
+                        </div>
+                        <div class="box" id="box3">
+                            <div class="box-top"><h3>Impossible app</h3>
+                            This is the filler content for the third box. There's not much going on but we're
+                            just coding stuff. Testing to see if this keeps pushing the bottom stuff. (and it does
+                            unless I add overflow auto)</div>
+                            <div class="box-bottom">
+                                <img src="images/star.png"><img src="images/eye.png"><img src="images/share.png">
+                            </div>
+                        </div>
+                        <div class="box" id="box4">
+                            <div class="box-top"><h3>Easy Peasy App</h3>
+                            This is the filler content for the fourth box. There's not much going on but we're
+                            just coding stuff. Testing to see if this keeps pushing the bottom stuff. (and it does
+                            unless I add overflow auto)</div>
+                            <div class="box-bottom">
+                                <img src="images/star.png"><img src="images/eye.png"><img src="images/share.png">
+                            </div>
+                        </div>
+                        <div class="box" id="box5">
+                            <div class="box-top"><h3>Ad Blocker</h3>
+                            This is the filler content for the fifth box. There's not much going on but we're
+                            just coding stuff. Testing to see if this keeps pushing the bottom stuff. (and it does
+                            unless I add overflow auto)</div>
+                            <div class="box-bottom">
+                                <img src="images/star.png"><img src="images/eye.png"><img src="images/share.png">
+                            </div>
+                        </div>
+                        <div class="box" id="box6">
+                            <div class="box-top"><h3>Money Maker</h3>
+                            This is the filler content for the Sixth box. There's not much going on but we're
+                            just coding stuff. Testing to see if this keeps pushing the bottom stuff. (and it does
+                            unless I add overflow auto)</div>
+                            <div class="box-bottom">
+                                <img src="images/star.png"><img src="images/eye.png"><img src="images/share.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right__side">
+                    <div class="announcements__header">
+                        Announcements
+                    </div>
+                    <div class="box2" id="announce">
+                        <div class="right__top">
+                            <h3>Title for the top</h3>
+                            Body paragraph or information wished to display for the user.<br>
+                            This can be long or short.<br>
+                            Giving an example of overflow:<br>
+                            one<br>
+                            two<br>
+                            three<br>
+                            four<br>
+                            five<br>
+                            six<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>
+                        </div>
+                        <div class="right__middle">
+                            <h3>Title for the middle</h3>
+                            Body paragraph or information wished to display for the user.<br>
+                            This can be long or short.<br>
+                            Giving an example of overflow:<br>
+                            one<br>
+                            two<br>
+                            three<br>
+                            four<br>
+                            five<br>
+                            six<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>
+                        </div>
+                        <div class="right__bottom">
+                            <h3>Title for the bottom</h3>
+                            Body paragraph or information wished to display for the user.<br>
+                            This can be long or short.<br>
+                            Giving an example of overflow:<br>
+                            one<br>
+                            two<br>
+                            three<br>
+                            four<br>
+                            five<br>
+                            six<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>
+                        </div>
+                    </div>
+                    <div class="trending__header">
+                        Trending
+                    </div>
+                    <div class="box2" id="trending">
+                        <div class="trending__image_1"><img src="images/user.png"></div>
+                        <div class="trending__profile_1">profile info<br>
+                            @somethingorother
+                        </div>
+                        <div class="trending__image_2"><img src="images/user.png"></div>
+                        <div class="trending__profile_2">profile info<br>
+                            @somethingorother
+                        </div>
+                        <div class="trending__image_3"><img src="images/user.png"></div>
+                        <div class="trending__profile_3">profile info<br>
+                            @somethingorother
+                        </div>
+                        <div class="trending__image_4"><img src="images/user.png"></div>
+                        <div class="trending__profile_4">profile info<br>
+                            @somethingorother
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
     
+    <script src="js.js"></script>
 </body>
 </html>
