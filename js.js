@@ -2,6 +2,10 @@ const project__boxes = document.querySelector('.projects__boxes');
 const right__top = document.querySelector('.right__top');
 const right__middle = document.querySelector('.right__middle');
 const right__bottom = document.querySelector('.right__bottom');
+const nav__bar = document.querySelector('.sidebar__cont');
+const nav__bar2 = document.querySelector('.sidebar__cont2');
+const nav__lines = document.querySelector('.sidebar__toggle');
+const main__cont = document.querySelector('.main__cont');
 let counter = 0;
 let mouseOver = false;
 
@@ -59,3 +63,27 @@ function enable() {
 }
 
 enable();
+
+nav__lines.addEventListener('mouseenter', () => {
+    const newDiv = document.createElement('div');
+    newDiv.classList.add('sidebar__cont');
+    newDiv.style.gridColumn = '2';
+    newDiv.style.gridRow = '1 / 5';
+    newDiv.style.width = '286px';
+    newDiv.style.height = '30%';
+    newDiv.style.display = 'grid';
+    newDiv.style.gridTemplateColumns = '1fr 5fr';
+    newDiv.gap = '15px';
+    newDiv.style.backgroundColor = 'var(--common-blue)';
+    newDiv.style.padding = '20px';
+    newDiv.style.zIndex = '999';
+    newDiv.style.borderBottomRightRadius = '8px';
+    newDiv.innerHTML = nav__bar.innerHTML;
+    newDiv.style.position = 'sticky';
+    newDiv.style.top = '0';
+    main__cont.appendChild(newDiv);
+
+    newDiv.addEventListener('mouseleave', () => {
+    main__cont.removeChild(newDiv);
+})
+})
